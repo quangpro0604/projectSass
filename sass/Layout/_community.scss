@@ -1,0 +1,71 @@
+.my_community{
+    .community__title{
+        h2{
+            @include styleText($fs-4,$fw-bold,$color-black-3);
+            padding: $pd-3;
+        }
+    }
+    .community__first{
+        .community__img{
+            position: relative;
+            margin-bottom: $mg-3;
+            cursor: pointer;
+            transition: all .6s;
+            max-width: 240px;
+            overflow: hidden;
+            img{
+                transition: all .6s;
+                &:hover{
+                    transform: scale(1.1);
+                    opacity: 0.7;
+                }
+            }
+        }
+        .community__content{
+            position: absolute;
+            bottom: 10%;
+            p{
+                @include styleText($fs-3,$fw-bold-0,$color-white-0);
+                padding-left: $pd-2;
+            }
+        }
+    }
+    .community__second{
+        .community__img{
+            position: relative;
+            cursor: pointer;
+            max-width: 240px;
+            overflow: hidden;
+            img{
+                transition: all .6s;
+                &:hover{
+                    transform: scale(1.1);
+                    opacity: 0.7;
+                }
+            }
+        }
+        .community__content{
+            position: absolute;
+            bottom: 0;
+            p{
+                @include styleText($fs-3,$fw-bold-0,$color-white-0);
+                padding-left: $pd-2;
+            }
+        }
+        .my__skill{
+            background-color: $color-white-cream;
+            .skill{
+                padding-top: $pd-4;
+                i{
+                    @include styleText($fs-3,$fw-bold-0,$color-pink-1);
+                    padding-bottom: $pd-1;
+                }
+                h3{
+                    @include styleText($fs-4 -3,$fw-bold-0,$color-black-1);
+                    letter-spacing: 1px;
+                    padding-bottom: $pd-1;
+                }
+            }
+        }
+    }
+}

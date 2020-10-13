@@ -1,0 +1,51 @@
+.my__getwork{
+    width: 85%;
+    margin: 0 auto;
+    .getwork__left{
+        width: 80%;
+        .getwork__content{
+            h2{
+                @include styleText($fs-3 +2,$fw-bold-0,$color-black-0);
+                margin: $mg-3 0;
+            }
+        }   
+        .getwork__infor{
+            .getwork__intro{
+                span{
+                    @include styleText($fs-2 -2,$fw-bold-0,$color-black-0);
+                    margin-left: $mg-1;
+                }
+                p{
+                    @include styleText($fs-0,$fw-normal,$color-black-0);
+                }
+            }
+        }
+    }
+    .getwork__right{
+        width: 80%;
+        margin: $mg-3 0;
+        .video__img{
+            position: relative;
+        }
+        .icon__open{
+            position: absolute;
+            top: 45%;
+            left: 48%;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 1px solid $color-black-0;
+            background-color: $color-black-dark;
+            line-height: 79px;
+            padding-left: $pd-2;
+            transition: all 0.5s;
+            i{
+                color: $color-white-0;
+                font-size: $fs-4;
+            }
+            &:hover{
+                background-color: $color-black-3;
+            }
+        }
+    }
+}

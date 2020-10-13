@@ -1,0 +1,39 @@
+.my__client{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: $mg-4;
+    .client__first, .client__second{
+        .client__img{
+            position: relative;
+        }
+        .icon__open-client{
+            position: absolute;
+            top: 42%;
+            left: 22%;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 1px solid $color-black-0;
+            line-height: 70px;
+            background-color: $color-black-dark;
+            padding-left: $pd-3;
+            padding-top: $pd-0;
+            transition: all 0.5s;
+            cursor: pointer;
+            i{
+                font-size: $fs-4;
+                color: $color-white-0;
+            }
+            &:hover{
+                background-color: $color-black-3;
+            }
+        }
+        .card-body{
+            .card-text{
+                @include styleText($fs-2,$fw-normal,$color-black-1);
+                margin-top: $mg-3;
+            }
+        }
+    }
+   
+}

@@ -1,0 +1,45 @@
+.my_learn{
+    width: 80%;
+    margin: 0 auto;
+    background-color: $color-white-cream-3;
+    .learn__title{
+        padding: $pd-4;
+        .learn__logo{
+            padding-bottom: $pd-2;
+        }
+        .learn__content{
+            h2{
+                @include styleText($fs-4 -4,$fw-bold,$color-black-0);
+                line-height: 120%;
+                letter-spacing: 1px;
+            }
+            p{
+                @include styleText($fs-0 +2,$fw-normal,$color-white-cream-1);
+                line-height: 26px;
+                padding-bottom: $pd-3;
+            }
+        }
+    }
+    .learn__video{
+        position: relative;
+        .btn-play{
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            color: $color-white-0;
+            border: 2px solid $color-white-0;
+            line-height: 63px;
+            padding-left: $pd-3;
+            font-size: $fs-4;
+            background-color: #080707;
+            z-index: 5;
+            &:hover{
+                background-color: $color-black-dark;
+               
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.my__service{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: $mg-4;
+    margin-bottom: $mg-3;
+    position: relative;
+    .service__content{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        .try{
+            font-size: $fs-2;
+        }
+        p{
+            @include styleText($fs-3,$fw-normal,$color-white-0);
+        }
+    }
+}

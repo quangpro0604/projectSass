@@ -1,0 +1,58 @@
+.carousel__start{
+   .container-slider-video{
+       width: 100%;
+       position: relative;
+       height: auto;
+       max-height: 80vh;
+       #video-slider{
+           .carousel-inner{
+               .carousel-item{
+                   position: relative;
+                   height: 80vh;
+                   #videoSL{
+                       position: absolute;
+                       top: 0;
+                       left: 0;
+                       right: 0;
+                       bottom: 0;
+                       z-index: -1;
+                       width: 100%;
+                        object-fit: cover;
+                   }
+                  
+               }
+           }
+       }
+   }
+   .content-video{
+        position: absolute;
+        top: 29%;
+        h2{
+            @include styleText($fs-5 +10,$fw-bold-0,$color-white-0);
+            letter-spacing: 1px;
+        }
+        p{
+            @include styleText($fs-3,$fw-normal,$color-white-0);
+            letter-spacing: 1px;
+        }
+    }
+    .content{    
+        .video__content{
+            width: 100%;
+            padding: $pd-3 +5;
+            z-index: 2;
+            position: absolute;
+            bottom: 8%;
+            justify-content: space-around;
+            background-color: rgba(255,255,255,.3);
+            span{
+                @include styleText($fs-2 +2,$fw-normal,$color-white-0);
+                letter-spacing: 1px;
+            }
+            p{
+                @include styleText($fs-5,$fw-bold,$color-white-0);
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,34 @@
+.my__popular{
+    width: 85%;
+    margin: 0 auto;
+    .popular__content{
+        h2{
+            @include styleText($fs-3 +2,$fw-bold-0,$color-black-0);
+            margin-top: $mg-4;
+            margin-bottom: $mg-2;
+        }
+    }
+    .popular__course{
+        .card{
+            position: relative;
+            cursor: pointer;
+            opacity: 1;
+            transition: all 0.5s;
+            &:hover{
+                opacity: 0.8;
+            }
+            .card-body{
+                position: absolute;
+                top: 0;
+                left: 0;
+                span{
+                    @include styleText($fs-0 -1,$fw-normal,$color-white-0);
+                    letter-spacing: 1px;
+                }
+                p{
+                    @include styleText($fs-2,$fw-bold,$color-white-0);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.my__works{
+    background-color: $color-white-cream;
+    margin: $mg-4 0;
+    .works{
+        width: 80%;
+        margin: 0 auto;
+        .works__title{
+            h2{
+                @include styleText($fs-4,$fw-bold,$color-black-0);
+
+            }
+        }
+        .work__content{
+            padding-bottom: $pd-4;
+            .works__gig{
+                i{
+                    @include styleText($fs-5,$fw-bold,$color-white-cream-1);
+                }
+                p{
+                    @include styleText($fs-2 +3,$fw-bold,$color-gray-0);
+                    letter-spacing: 1px;
+                }
+                span{
+                    @include styleText($fs-0,$fw-normal,$color-black-1);
+                }
+            }
+            .works__deliver{
+                i{
+                    @include styleText($fs-5,$fw-bold,$color-white-cream-1);
+                }
+                p{
+                    @include styleText($fs-2 +3,$fw-bold,$color-gray-0);
+                    letter-spacing: 1px;
+                }
+                span{
+                    @include styleText($fs-0,$fw-normal,$color-black-1);
+                }
+            }
+            .works__paid{
+                i{
+                    @include styleText($fs-5,$fw-bold,$color-white-cream-1);
+                }
+                p{
+                    @include styleText($fs-2 +3,$fw-bold,$color-gray-0);
+                    letter-spacing: 1px;
+                }
+                span{
+                    @include styleText($fs-0,$fw-normal,$color-black-1);
+                }
+            }
+        }
+    }
+}

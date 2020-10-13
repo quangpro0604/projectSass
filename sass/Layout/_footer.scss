@@ -1,0 +1,61 @@
+.my__footer{
+    background-color: $color-white-cream;
+   .footer__content{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: $mg-4;
+        
+        .footer__logo{
+            padding-top: $pd-3;
+            .footer__term{
+                a{
+                    @include styleText($fs-1,$fw-normal,$color-white-cream-1);
+                    padding-top: $pd-2;
+                }
+            }
+            p{
+                @include styleText($fs-1,$fw-normal,$color-black-1);
+                padding: $pd-1 0;
+            }
+        }
+        .footer__contact{
+            .footer__info{
+                h3{
+                    @include styleText($fs-0,$fw-bold,$color-black-0);
+                    letter-spacing: 1px;
+                }
+                ul{
+                    li{
+                        list-style: none;
+                        padding: $pd-1 0;    
+                        a{
+                            @include styleText($fs-0,$fw-normal,$color-white-cream-1);
+                        }
+                    }
+                }
+            }
+        }
+        .footer__social{
+            border-top: 1px solid $color-white-cream-1;
+            display: flex;
+            justify-content: space-around;
+            .social{
+                @include styleText($fs-2,$fw-bold,$color-white-cream-1);
+                margin-right: auto;
+                padding: $pd-3 0;
+                i{
+                    padding-left: $pd-3;
+                    cursor: pointer;
+                }
+            }
+            .seclector{
+                padding: $pd-3 0;
+                select{
+                    @include styleText($fs-2,$fw-bold,$color-white-cream-1);
+                    border-radius: 5px;
+                    outline: none;
+                }
+            }
+        }
+   }
+}

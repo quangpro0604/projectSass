@@ -1,0 +1,69 @@
+.carousel{
+    .my__carousel{
+        position: relative;
+            .carousel__img{
+                position: absolute;
+                bottom: 0;
+                right: 10%;
+                .carousel-inner{
+                    width: 380px !important;
+                }
+            }
+            .carousel__top{
+                background: $color-white-1;
+                height: 450px;
+                position: relative;
+                .carousel__content{
+                .carousel__title{
+                    h1{
+                        @include styleText($fs-4,$fw-bold,$color-black-0);
+                        padding: $pd-3 0 ;
+                        letter-spacing: 1px;
+                        padding-top: $pd-3 +50;
+                    }                  
+                }
+                .carousel__search{
+                    width: 50%;
+                    margin-bottom: $mg-2; 
+                    @include styleSearch($color-white-0, $color-white-0, $color-black-light, $color-black-1);
+                    .form-control{
+                        z-index: 5;
+                    }
+                }
+                .carousel__popular{
+                    align-items: center;
+                    cursor: pointer;
+                   
+                    p{
+                       @include styleText($fs-1,$fw-bold-0,$color-white-cream-1);
+                       padding-right: $pd-2;
+                       margin-top: $mg-1;
+                    }
+                    .list-group{
+                        .list-group-item{
+                            padding: $pd-0 $pd-1;
+                            margin: $mg-1;
+                            border: 1px solid $color-black-2;
+                            border-radius: 10px;
+                            @include styleText($fs-1,$fw-bold-0,$color-white-cream-1);
+                            z-index: 5;
+                            transition: all .8s;
+                            &:hover{
+                                @include styleText($fs-1,$fw-bold-0,$color-black-1);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+            .carousel__bottom{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                border-bottom: 30vw solid;
+                border-left: 70vw solid transparent;
+                border-bottom-color: #e7643e;
+        } 
+    }
+}

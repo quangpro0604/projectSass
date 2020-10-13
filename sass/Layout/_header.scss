@@ -1,0 +1,27 @@
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    transition: all .8s;
+    &.headerClass{
+        background-color: $color-white-1;
+    }
+    .my__navbar{
+        width: 90%;
+        margin: 0 auto;
+        .navbar-nav{          
+            .nav-item{ 
+                .nav-link{
+                    @include styleText($fs-1,$fw-bold-0,$color-black-0);
+                    transition: all .5s;
+                    letter-spacing: 1px;
+                    padding: $pd-1;
+                    &:hover{
+                       @include styleText($fs-1,$fw-bold,$color-green-0);
+                    }
+                }
+            }          
+        }
+    }   
+}
+    

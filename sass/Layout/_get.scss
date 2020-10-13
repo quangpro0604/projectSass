@@ -1,0 +1,5 @@
+.my__get{
+    .get__title{
+        @include styleText($fs-0 +2,$fw-normal,$color-black-1);
+    }
+}

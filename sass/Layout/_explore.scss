@@ -1,0 +1,38 @@
+.my_explore{
+    width: 80%;
+    margin: 0 auto;
+    h2{
+        @include styleText($fs-3 +2,$fw-bold,$color-black-0);
+        letter-spacing: 1px;
+        margin-top: $mg-4;
+        margin-bottom: $mg-3;
+    }
+    .explore__first, .explore__second{   
+        position: relative;
+        img{
+            width: 50px;
+            cursor: pointer;
+            border-width: 80%;
+            border-bottom: 2px solid $color-black-2;
+            transition: all .5s;
+            padding-bottom: $pd-1;
+            &:hover{
+                border-bottom: 3px solid $color-green-0;
+            }
+            &::after{
+                content: '';
+                height: 2px;
+                width: 100%;
+                position: absolute;
+                display: block;
+                background-color: $color-black-1;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        p{
+            @include styleText($fs-0,$fw-normal,$color-black-1);
+            padding: $pd-2 0;
+        }
+    }
+}

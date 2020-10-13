@@ -1,0 +1,36 @@
+.my__guides{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: $mg-4;
+    margin-bottom: $mg-3;
+    .guides__title{
+        h2{
+            @include styleText($fs-3 +2,$fw-bold-0,$color-black-0);
+            letter-spacing: 1px;
+            margin-bottom: $mg-2;
+        }
+    }
+    .guides__content{ 
+        opacity: 1;     
+        img{
+            transition: all .8s; 
+            cursor: pointer;
+            &:hover{
+                opacity: 0.8;  
+            }
+        }
+        .guides__text{
+            margin-top: $mg-2;
+            cursor: pointer;
+            span{
+                @include styleText($fs-0,$fw-bold,$color-black-0);
+                letter-spacing: 1px;
+            }
+            p{
+                @include styleText($fs-1,$fw-normal,$color-black-1);
+                letter-spacing: 1px;
+            }
+        }   
+    }
+
+}

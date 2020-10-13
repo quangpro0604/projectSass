@@ -1,0 +1,38 @@
+.my__stories{
+    width: 80%;
+    margin: 0 auto;
+    .stories__header{
+        h2{
+            @include styleText($fs-4 -3,$fw-bold,$color-black-3);
+            padding: $pd-4 0;
+        }
+    }
+    .stories__content{
+        position: relative;
+        .stories__img{
+            padding: 0;
+        }
+        .stories__title{
+            background-color: $color-white-cream-3;
+            position: relative;
+            blockquote{
+                width: 80%;
+                top: 40%;
+                position: absolute;
+                @include styleText($fs-0,$fw-normal,$color-white-cream-1);
+                .cite{
+                    font-size: $fs-1;
+                }
+            }
+            &:before{
+                content: '';
+                border-top: 19px transparent solid ;
+                border-bottom: 19px transparent solid;
+                position: absolute;
+                left: 0%;
+                z-index: 3;
+                top: 50%;
+            }
+        }
+    }
+}
